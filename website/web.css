@@ -1,0 +1,464 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	font-family: sans-serif;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+
+.banner
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #3475ca;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.25;
+}
+
+.content
+{
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+
+.content h2
+{
+	color: #fff;
+	font-size: 60px;
+}
+
+.content h2
+{
+	color: #fff;
+	font-size: 18px;
+}
+
+header
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%
+   padding: 40px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 1000;
+}
+
+header .logo
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+header .toggle
+{
+	position: relative;
+	width: 36px;
+	background: url(toggle.png);
+	background-size: cover;
+	cursor: pointer; 
+}
+
+.about
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	background: #162c3b;
+}
+
+.about .contentBx
+{
+	background: #162c3b;
+	width: 50%;
+	padding: 100px;
+}
+
+h2.heading
+{
+	color: #fff;
+	font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p.text
+{
+    color: #fff;
+	font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;	
+}
+
+.about .imgBx
+{
+	background: url(window.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}
+
+.services
+{
+	background: #12222d;
+	padding: 100px;
+	text-align: center;
+}
+
+.services .container
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+
+.services .container .serviceBx
+{
+	position: relative;
+	background: #fff;
+	width: 350px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.services .container .serviceBx img
+{
+	max-width: 100px;
+}
+
+.services .container .serviceBx img h2
+{
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.technology
+{
+	background: #3f8ffc;
+	width: 100%;
+	padding: 100px;
+	padding-top: 300px;
+	margin-top: -300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.technology .contentBx
+{
+	max-width: 1000px;
+}
+
+
+.technology .imgBx img
+{
+	max-width: 100px;
+}
+
+.client
+{
+	background: #162c3b;
+	padding: 100px;
+	text-align: center;
+}
+
+.client .imgBx
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.client .imgBx img
+{
+	max-width: 200px;
+	margin:20px;
+	cursor: pointer;
+}
+
+.client .imgBx img:hover
+{
+	opacity: 1;
+}
+
+.testimonials
+{
+	position: relative;
+	padding:100px;
+	background: #12222d;
+	text-align: center;
+}
+
+.testimonials .container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+
+.testimonials .container .contentBx
+{
+	background: #fff;
+	padding: 60px 50px;
+	width: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.testimonials .container .contentBx p
+{
+	font-style: italic;
+}
+
+.testimonials .container .contentBx h3
+{
+	width: 100%;
+	text-align: end;
+	font-weight: 500;
+	color: #3f8ffc
+}
+
+.contact
+{
+	padding: 100px;
+	background: #162c3b;
+	text-align: center;
+}
+
+.imgBx2
+{
+	background: url(bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}
+
+.redbg
+{
+	background: url(red.jpg) !important;
+	background-size: cover;
+	background-position: center;
+}
+
+.form form h2
+{
+	text-align: center;
+}
+
+
+.form .inputBx textarea[placeholder="write your msg here"]
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	
+	padding: 30px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 0px;
+	transition: 1s;
+	border-bottom: 2px solid #111;
+}
+
+.form .inputBx input[type="submit"]
+{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 30px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.form .inputBx input[type="submit"]:hover
+{
+    background: : blue;
+}
+
+.footer
+{
+	background: #162c3b;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li
+{
+	list-style: none;
+}
+
+.footer ul li a
+{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.footer ul li a img
+{
+	filter: invert(1);
+	max-width: 20px;
+}
+
+@media (max-width: 991px)
+{
+	.banner header
+	{
+	  padding: 20px 50px;
+	}
+
+	.banner .content h2
+	{
+		font-size: 36px;
+	}
+
+	.banner .content p
+	{
+		font-size: 16px;
+	}
+
+	.about
+	{
+		flex-direction: column;
+	}
+
+	.about .contentBx,
+	.about .imgBx
+	{
+		width: 100%;
+		padding: 50px;
+		min-height: 400px;
+		text-align: center;
+	}
+
+	.services
+	{
+		padding: 50px;
+	}
+
+	.services .container
+	{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.services .container .serviceBx
+	{
+		margin: 50px;
+		width: 300px;
+		height:350px;
+	}	
+
+	.technology
+	{
+		padding: 50px;
+		padding-top: 300px;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.technology .imgBx
+	{
+		margin-top: 40px;
+		max-width: 250px;
+	}
+
+	.client
+	{
+		justify-content: center;
+	}
+
+	.testimonials
+	{
+		padding: 50px;
+	}
+
+	.testimonials .contentBx
+	{
+		padding: 60px 40px;
+		max-width: 550px;
+		margin-bottom: 40px;
+	}
+
+	.testimonials .contentBx:last-child
+	{
+		margin-bottom: 0px;
+	}
+
+	.contact
+	{
+		padding: 50px;
+	}
+
+	.footer
+	{
+		padding: 20px 50px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.footer ul
+	{
+		margin-bottom: 20px;
+	}
+
+}

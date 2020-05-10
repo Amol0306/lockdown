@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signin_signup</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="signin_signup.css">
+</head>
+
+<body>
+	 <img src="road.jpeg">
+	 <div class="time">
+<div class="tw">
+        <h1>12</h1>
+      </div>
+      <div class="th">
+        <h1>3</h1>
+      </div>
+      <div class="six">
+        <h1>6</h1>
+      </div>
+      <div class="nin">
+        <h1>9</h1>
+      </div>
+  </div>    
+
+<div class="clock">
+      
+  		<div class="hour">
+  			<div class="hr" id="hr"></div>
+  		</div>
+  		<div class="min">
+  			<div class="mn" id="mn"></div>
+  		</div>
+  		<div class="sec">
+  			<div class="sc" id="sc"></div>
+  		</div>
+  	</div>	
+    <script type="text/javascript">
+      const deg=6;
+      const hr= document.querySelector('#hr');
+      const mn= document.querySelector('#mn');
+      const sc= document.querySelector('#sc');
+      
+      setInterval(() => {
+
+      let day = new Date();
+      let hh =day.getHours() * 30;
+       let mm =day.getMinutes() * deg;
+        let ss =day.getSeconds() * deg;
+
+        hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+         mn.style.transform = `rotateZ(${mm}deg)`;
+          sc.style.transform = `rotateZ(${ss}deg)`;
+          })
+    </script>
+<form class="signin" action="web.html" method="post">
+  <h1>signin</h1>
+  <div class="txt">
+  	<input type="text" name="" placeholder="Emai Id">
+	<br>
+	<input type="password" name="" placeholder="Password">
+	<br>
+	<input type="submit" name="" value="signin">
+</div>
+</form>
+
+<form class="signup" action="web.html" method="post">
+  <h1>signup</h1>
+  <div class="txt">
+  	<input type="text" name="" placeholder="Full Name">
+	<input type="text" name="" placeholder="Emai Id">
+	<input type="password" name="" placeholder="Password">
+	<input type="text" name="" placeholder="Mobile No.">
+	<input type="submit" name="" value="signup">
+  </div>
+	
+</form>
+
+</body>
+</html>
