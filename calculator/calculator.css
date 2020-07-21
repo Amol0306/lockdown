@@ -18,12 +18,15 @@ body
 
 .calculator
 {
+	border-radius: 30px;
+	background: blue;
 	position: relative;
 	display: grid;
 }
 
 .calculator .value
 {
+	border-radius: 10px;
 	grid-column: span 4;
 	height: 100px;
 	text-align: right;
@@ -35,6 +38,7 @@ body
 
 .calculator span
 {
+	border-radius: 200px;
 	display: grid;
 	width: 60px;
 	height: 60px;

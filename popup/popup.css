@@ -1,0 +1,149 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: montserrat;
+	background: url("popup.jpg");
+	background-repeat: no-repeat; 
+	background-origin: content-box;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#log
+{
+
+
+	width: 300px;
+	height: 300px;
+	padding: 40px;
+	position: absolute;
+	color: #333;
+	background: #d5f4e6;
+	align-items: center;
+	text-align: center;
+	border-radius: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0,0.2);
+	display: inline-block;
+}
+
+#log input[type="text"]
+{
+
+	align-items: center;
+     background-color: black;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	color: red;
+	border: 2px solid red;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	
+	border-radius:30px;
+	font-weight: 500;
+	display: inline-block;
+	transition: 0.4s;
+}
+
+#log input[type="submit"]
+{
+   background: black;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid red;
+	padding: 14px 10px;
+	width: 85px;
+	outline: none;
+	color: red;
+	border-radius: 30px;
+	font-weight: 500;
+	display: inline-block;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.overlay
+{
+	position: fixed;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.overlay.open
+{
+	display: flex;
+	animation: show-overlay 0.5s;
+}
+
+@keyframes show-overlay 
+{
+    0%{
+         opacity: 0;
+    }
+
+     100%{
+         opacity: 1;
+    }
+}
+
+.bar
+{
+	box-sizing: border-box;
+	font-family: consolas;
+	min-height: 100vh;
+	align-items: center;
+}
+nav
+{
+	background: #008267;
+	height: 80px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	box-sizing: border-box;
+	font-family: consolas;
+	min-height: 100vh;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding:  0 100px;
+	font-weight: bold;
+}
+
+nav ul
+{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li
+{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+}
